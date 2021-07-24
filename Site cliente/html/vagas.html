@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,900&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/vagas.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <title>Selexpert</title>
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+            
+            <h1 class="logo"><a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                  </svg>
+                Selexpert
+            </a></h1>
+        </div>
+        
+        <nav>
+            <a href="index.html" >Início</a>
+            <a href="vagas.html" class="selecionado">Procurar Emprego</a>
+            <a href="anuncie.html">Anuncie</a>
+            <a href="sobre-nos.html"  >Sobre nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <!--End Header-->
+    <main>
+        <div id="total-vagas">
+            <h2>Nós encontramos <span>5513</span> vagas:</h2>
+            <a href="anuncie.html" class="botao-estilo">ANUNCIAR VAGA</a>
+        </div>
+
+        <div id="container-vagas">
+            <div id="filtro">
+                <div id="campo-busca">
+                    <input type="text" id="campo1" placeholder="Digite sua área profissional">
+                    <input type="text" id="campo2" placeholder="Digite sua localização">
+                    <button class="botao-estilo"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg> BUSCAR</button>
+                </div>
+
+                <div class="linhaFiltro"></div>
+
+                <div id="texto-filtro">
+                    <h2>Filtrar busca</h2>
+                    <p>Utilize os filtros abaixo para refinar sua busca</p>
+                </div>
+
+                <div class="linhaFiltro"></div>
+
+                <div id="filtro-checkbox" class="filtros">
+                    <h3>Disponibilidade na semana</h3>
+
+                    <div id="semana">
+                        <ul>
+                            <li><input type="checkbox" name="semana" value="Domingo a Domingo"> Domingo a Domingo</li>
+                            <li><input type="checkbox" name="semana" value="Indiferente"> Indiferente</li>
+                            <li><input type="checkbox" name="semana" value="Segunda a Sábado"> Segunda a Sábado</li>
+                            <li><input type="checkbox" name="semana" value="Segunda a Sexta"> Segunda a Sexta</li>
+                        </ul>
+
+                    </div>
+                    
+                    <div class="linhaFiltro"></div>
+
+                    <div id="horario">
+                        <h3>Disponibilidade de Horário</h3>
+                        <ul>
+                            <li><input type="checkbox" name="horario" value="Disponibilidade de Horário"> Disponibilidade de Horário  </li>
+                            <li><input type="checkbox" name="horario" value="Indiferente"> Indiferente</li>
+                            <li><input type="checkbox" name="horario" value="Integral"> Integral </li>
+                            <li><input type="checkbox" name="horario" value="Madrugada"> Madrugada </li>
+                            <li><input type="checkbox" name="horario" value="Manhã"> Manhã  </li>
+                            <li><input type="checkbox" name="horario" value="Manhã e Noite"> Manhã e Noite  </li>
+                            <li><input type="checkbox" name="horario" value="Noite"> Noite  </li>
+                            <li><input type="checkbox" name="horario" value="Tarde"> Tarde  </li>
+                            <li><input type="checkbox" name="horario" value="Turno"> Turno </li>
+                            
+
+                        </ul>
+                    </div>
+
+                    <div class="linhaFiltro"></div>
+
+                    <div id="salario">
+                        <h3>Salário</h3>
+                        <ul>
+                            <li><input type="checkbox"  name="salario" value="Qualquer"> Qualquer</li>
+                            <li><input type="checkbox"  name="salario" value="100 - 1000"> R$ 100 - R$ 1000</li>
+                            <li><input type="checkbox"  name="salario" value=" 1000"> R$ 1000</li>
+                            <li><input type="checkbox"  name="salario" value=" 1500 - 2000"> R$ 1500 - R$ 2000</li>
+                            <li><input type="checkbox"  name="salario" value=" 2500 - 3000"> R$ 2500 - R$ 3000</li>
+                            <li><input type="checkbox"  name="salario" value="3000+"> R$ 3000+</li>
+                        </ul>
+                    </div>
+
+                    <div class="linhaFiltro"></div>
+
+                    <div id="botao-filtro">
+                        <button class="botao-estilo">Filtrar</button>
+                        <a href="#" class="botao-estilo">Limpar Filtros</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="vagas">  
+                <ul> <!--Inicio Vagas-->
+                    <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                        
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Atendente de Farmácia</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Emprego</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> R$ 1500</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> Rio de Janeiro - RJ</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Disponibilidade de Horário</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Ensino Médio Completo | Curso de Farmacêutico. </p>
+                            <p class="vaga-descricao"><span>Descricação:</span> Estamos precisando de profissionais que tem experiencia lidando com Remédios.</p>
+                        </div>
+                    </a>
+                    </li>    
+                    
+                     <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Programador Web - Front End</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Emprego</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> R$ 3000</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> São Paulo - SP</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Integral</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Conhecimentos em HTML, CSS e JavaScript | Estar cursando o segundo período em uma faculdade de TI.</p>
+                            <p class="vaga-descricao"><span>Descricação:</span> Estágio destinado à alunos de TI afim de ajudar em sua evolução.</p>
+                        </div>
+                        </a>
+                        
+                    </li>   
+                     <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Estoquista</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Jovem Aprendiz</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> R$ 750</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> Rio de Janeiro - RJ</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Noite</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Ser menor de 21 anos | Possuir carteira de trabalho.</p>
+                            <p class="vaga-descricao"><span>Descricação:</span> Repor mercadorias no estoque.</p>
+                        </div>
+                        </a>
+                    </li>   
+                     <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                        
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Balconista</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Emprego</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> A combinar</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> Minas Gerais - MG</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Integral</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Possuir experiência com atendimento ao cliente.</p>
+                            <p class="vaga-descricao"><span>Descricação:</span> Receber clientes e cuidar da correspondência.</p>
+                        </div>
+                        
+                    </a>
+                    </li>   
+                     <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                        
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Professor de Informática</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Emprego</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> A combinar</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> Espiríto Sanos - ES</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Manhã e Noite</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Ser formado em alguma faculdade de Tecnologia | Formado em Pedagogia. </p>
+                            <p class="vaga-descricao"><span>Descricação: Lecionar a disciplina de Informática. </span> </p>
+                        </div>
+                        </a>
+                    </li>   
+                     <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                        
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Motorista de Onibûs</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Emprego</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> R$ 1500</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> Rio de Janeiro - RJ</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Manhã</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Carteira de Motorista.</p>
+                            <p class="vaga-descricao"><span>Descricação:</span> Receber e Levar passageiros durante o trajeto definido pela empresa.</p>
+                        </div>
+                        </a>
+                    </li>   
+                     <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Operador de Caixa</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Emprego</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> R$ 1400</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> Bahia - BH</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Integral</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Possuir carteira de trabalho.</p>
+                            <p class="vaga-descricao"><span>Descricação:</span> Registrar os produtos no caixa.</p>
+                        </div>
+                        </a>
+                    </li>   
+                     <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Faxineiro</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Emprego</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> R$ 1100</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> São Paulo - SP</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Noite</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Possuir carteira de trabalho | Ser maior de 18 anos.</p>
+                            <p class="vaga-descricao"><span>Descricação:</span> Fazer limpezas em geral.</p>
+                        </div>
+                        </a>
+                    </li>   
+                     <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Enfermeira</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Estágio</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> R$ 1000</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> Goiás - GO</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Tarde</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Estar cursando Enfermagem.</p>
+                            <p class="vaga-descricao"><span>Descricação:</span> Atender os pacientes.</p>
+                        </div>
+                        </a>
+                    </li>   
+                     <!-- Vaga -->
+                    <li>
+                        <div class="linhaVaga"></div>
+                        <a href="#" class="vaga">
+                
+                        <img src="https://www.cebracempregos.com.br/assets/images/img_empresas/empresa_default.png" alt="Icone vaga" width="70" height="70">
+
+                        <div class="texto-vagas">
+                            
+                            <h3>Auxiliar de Cozinheiro</h3>
+                            <div class="vaga-info"> 
+                                <!-- Tipo de emprego -->
+                                <p class="info-emprego">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                    </svg> Emprego</p>
+
+                                <!-- Salario -->
+                                <p class="info-salario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                        <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> R$ 1600</p>
+                                    
+                                <!-- Local -->
+                                <p class="info-local">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> São Paulo - SP</p>
+                                
+                                <!-- Horario -->
+                                <p class="info-horario">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                    </svg> Noite</p>
+                                
+                                </div>
+                            <p class="vaga-requisitos"><span>Requisitos:</span> Experiência com culinária.</p>
+                            <p class="vaga-descricao"><span>Descricação:</span> Auxiliar o cozinheiro em serviços gerais.</p>
+                        </div>
+                        </a>
+                    </li>   
+
+                    
+                </ul><!--End VAGAS-->
+                        
+                <div id="proximaPag">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">></a>
+                    <a href="#">>></a>
+                </div>
+                    
+            </div> 
+
+            <div class="linha"></div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Site criado para fins estudantis</p>
+        <p>&copy;Selexpert | 2021</p>
+    </footer>
+</body>
+</html>

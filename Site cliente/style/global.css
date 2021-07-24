@@ -1,0 +1,130 @@
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    --verdeFundo: rgb(15, 161, 15);
+    --cinzaFundo: #363F4D;
+    --cinza: #20242b;
+    --verde: rgb(54, 231, 54);
+    font-family: 'Poppins','Calibri';
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* Logotipo */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    box-shadow: 0px 0px 3px black;
+}
+.logo a svg{
+    position: relative;
+    top: 3px;
+}
+header h1.logo{
+   
+    transition: all .3s;
+    border-radius: 10px;
+    background: rgb(15, 161, 15);
+}
+
+header h1.logo a{
+    color: white;
+    padding: 10px;
+    font-size: 25pt;
+    transition: all 0.3s;
+}
+/* Menu */
+
+nav a {
+    font-size: 14pt;
+    margin-left: 10px;
+    color: var(--cinza);
+    font-weight: 600;
+    transition: all 0.3s;
+    padding: 5px;
+    
+}
+nav a:hover{
+    /* border-bottom: 2px solid var(--verdeFundo); */
+    background: rgb(15, 161, 15);
+    color: white;
+   
+}
+@media (max-width: 854px){
+    nav{
+        margin-top: 10px;
+    }
+}
+.selecionado{
+    background: rgb(54, 231, 54);
+    padding: 5px;
+    border-radius: 2px;
+    
+}
+.selecionado:hover{
+    border: none;
+}
+.linhaV{
+    display: flex;
+    justify-content: center;
+    height: 132px;
+    width: 1px;
+    background: rgb(224, 221, 221);
+    margin: 0 40px ;
+}
+.linhaH{
+    height: 1px;
+    background: rgba(128, 128, 128, 0.308);
+    margin: 10px;
+}
+input{
+    font-size: 14pt;
+ 
+}
+p{
+    font-size:13pt;
+}
+h3{
+    font-size: 18pt;
+}
+h2{
+    font-size: 20pt;
+}
+a{
+    font-size: 14pt;
+    color: var(--cinzaFundo);
+}
+footer{
+    height: 100%;
+    text-align: center;
+    background: var(--cinza);
+    font-size: 14pt;
+    color: white;
+    padding: 10px;
+    
+}
+.botao-estilo{
+    background: var(--verdeFundo);
+    color: white;
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: 400;
+    transition: all 0.4s;
+    border: none;
+    cursor: pointer;
+}
+.botao-estilo:hover{
+    background: var(--verde);
+    color: black;
+    
+}

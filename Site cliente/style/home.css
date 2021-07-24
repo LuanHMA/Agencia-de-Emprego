@@ -1,0 +1,186 @@
+/* ------- Index ------- */
+/*  Padrão links/menu: 14pt;
+    Padrão titulos: 38pt
+
+*/
+*html{
+    --verdeFundo: rgb(15, 161, 15);
+    --cinzaFundo: #363F4D;
+    --cinza: #20242b;
+    --verde: rgb(54, 231, 54);
+}
+/* Conteudo Index */
+div#buscar-emprego{
+    background: var(--verde);
+    padding-bottom: 50px;
+}
+div#buscar-emprego section{
+    width: 85%;
+    margin: 2px auto;
+    text-align: center;
+    padding: 50px;
+}
+/* Conteudo buscar emprego */
+div#buscar-emprego section h2{
+    padding: 20px 0;
+    color: black;
+    font-size: 32pt;
+    font-weight: 700;
+}
+div#buscar-emprego h3{
+    padding: 10px 0;
+    font-size: 24pt;
+    color: black;
+    font-weight: 400;
+}
+div#buscar-emprego h3 span{
+    font-weight: 700;
+}
+div#form-home form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Botões */
+div#form-home input[type="text"]{
+    height: 50px;
+    font-size: 18pt;
+    line-height: 0;
+    outline: none;
+    margin-right: 10px;
+    color: rgb(189, 183, 183);
+    border: none;
+    text-indent: 10px;
+}
+div#form-home form .campo1 input{
+    width: 320px;
+    margin-right: 20px;
+}
+div#form-home form .campo2 input{
+    width: 260px;
+}
+div#form-home button{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    background: var(--verdeFundo);
+    cursor: pointer;
+    box-shadow: 0 0 2px black;
+}
+div#form-home button:hover{
+    opacity: .8;
+}
+/* Icones */
+div#form-home button svg{
+    position: static;
+    color: white;
+    font-weight: bolder;
+
+}
+/* Ultimas vagas */
+
+.vagas{
+    width: 85%;
+    margin: 0 auto;;
+}
+.vagas h2 {
+    margin: 50px 0;
+    color: var(--cinza);
+    font-weight: 400;
+}
+.vagas ul li a{ /*Container principal das vagas*/
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+.vagas ul li a img{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+}
+
+.vagas ul li a h3{
+    color: var(--cinzaFundo);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    font-size: 15pt;
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+.vagas ul li a p{
+    color: var(--cinzaFundo);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    display: inline-block;
+    display: flex;
+}
+.vagas ul li a svg{
+    margin-right: 5px;
+    margin-left: 5px;
+    color: var(--verdeFundo);
+}
+.vagas ul li a p span{
+    display: flex;
+    margin-right: 5px;
+    
+}
+.vagas ul li a p span.horario-integral{
+    color: rgb(17, 17, 184);
+    font-weight: 700;
+}
+.vagas ul li a p span.horario-integral svg{
+    color: rgb(17, 17, 184);
+}
+.vagas ul li a p span.horario-disponivel{
+    color: rgb(192, 33, 12);
+    font-weight: 700;
+}
+.vagas ul li a p span.horario-disponivel svg{
+    color: rgb(192, 33, 12);
+}
+.linha{
+    height: 1px;
+    background: rgba(128, 128, 128, 0.308);
+    margin: 10px;
+}
+#mais-vagas{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estatisticas */
+#estatisticas-home{
+    width: 100%;
+    background: var(--cinzaFundo);
+}
+#estatisticas-home #estatisticas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 250px;
+}
+#estatisticas-home #estatisticas .estat{
+    color: white;
+    margin: 0 10px;
+  
+    
+}
+
+#estatisticas-home #estatisticas .estat p{
+    font-size: 15pt;
+}
+#estatisticas-home #estatisticas .estat span{
+    font-size: 50pt;
+    font-weight: 700;
+}
+.linha2{
+    display: flex;
+    justify-content: center;
+    height: 132px;
+    width: 1px;
+    background: white;
+    margin: 0 40px ;
+}

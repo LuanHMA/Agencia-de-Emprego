@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,900&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/anuncie.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <title>Selexpert</title>
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+            
+            <h1 class="logo"><a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                  </svg>
+                Selexpert
+            </a></h1>
+        </div>
+        
+        <nav>
+            <a href="index.html" >Início</a>
+            <a href="vagas.html" >Procurar Emprego</a>
+            <a href="anuncie.html" class="selecionado">Anuncie</a>
+            <a href="sobre-nos.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <!--End Header-->
+    <main>
+        <div id="anuncio-header">
+            <div id="texto-anuncio">
+                <h1>Encontre sua próxima contratação de forma rápida e gratuita!</h1>
+                <h2>Você já sabe qual candidato quer encontrar.
+                E nós sabemos como ajudar você.</h2>
+
+            </div>
+
+            <div class="linha"></div>
+
+            <div id="form-anuncio">
+                <h1>Cadastrar Vaga</h1>
+                
+                <form action="#">
+                    <div class="nome">
+                        <input type="text" id="nome" placeholder="Nome da Empresa">
+
+                    </div>
+                    <div class="infoPessoais">
+                        <input type="email" placeholder="Email">
+                        <input type="tel" placeholder="Telefone">
+                    </div>
+
+                    <div class="localizacao">
+                  
+                        <select id="estados" name="estados">
+                            <option value="ac">Acre</option> 
+                            <option value="al">Alagoas</option> 
+                            <option value="am">Amazonas</option> 
+                            <option value="ap">Amapá</option> 
+                            <option value="ba">Bahia</option> 
+                            <option value="ce">Ceará</option> 
+                            <option value="df">Distrito Federal</option> 
+                            <option value="es">Espírito Santo</option> 
+                            <option value="go">Goiás</option> 
+                            <option value="ma">Maranhão</option> 
+                            <option value="mt">Mato Grosso</option> 
+                            <option value="ms">Mato Grosso do Sul</option> 
+                            <option value="mg">Minas Gerais</option> 
+                            <option value="pa">Pará</option> 
+                            <option value="pb">Paraíba</option> 
+                            <option value="pr">Paraná</option> 
+                            <option value="pe">Pernambuco</option> 
+                            <option value="pi">Piauí</option> 
+                            <option value="rj">Rio de Janeiro</option> 
+                            <option value="rn">Rio Grande do Norte</option> 
+                            <option value="ro">Rondônia</option> 
+                            <option value="rs">Rio Grande do Sul</option> 
+                            <option value="rr">Roraima</option> 
+                            <option value="sc">Santa Catarina</option> 
+                            <option value="se">Sergipe</option> 
+                            <option value="sp">São Paulo</option> 
+                            <option value="to">Tocantins</option> 
+                        </select>
+                        <input type="text" id="endereco" placeholder="Endereço">
+
+                    </div>
+
+                    <div class="cargo">
+                        <input type="text" id="cargo" placeholder="Cargo">
+                    </div>
+
+                    <div class="sobre-vaga">
+                        <select name="tipo" id="tipo" >
+                            <option value="tipo" class="option">Tipo da Vaga</option>
+                            <option value="emprego">Emprego</option>
+                            <option value="estagio">Estágio</option>
+                            <option value="estagioferias">Estágio de Férias</option>
+                            <option value="jovem">Jovem Aprendiz</option>
+                        </select>
+
+                        <select name="duracao" id="duracao">
+                            <option value="duracao">Duração do Anúncio</option>
+                            <option value="dia">1 Dia</option>
+                            <option value="sema" >1 Semana </option>
+                            <option value="mes" >2 Semanas </option>
+                            <option value="mes" >1 Mês </option>
+                        </select>
+                    </div>
+
+                    <div class="descricao">
+                        <textarea id="descricao"  placeholder="Descrição" ></textarea>
+                    </div>
+                    <div class="requisitos">
+                        <textarea id="requisitos"  placeholder="Requisitos"></textarea>
+                    </div>
+                    <div class="botao">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+
+
+
+
+                </form>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Site criado para fins estudantis</p>
+        <p>&copy;Selexpert | 2021</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+main{
+    margin: 20px auto;
+    padding-left: 15px;
+    width: 70%;
+}
+input{
+    width: 80%;
+    outline: none;
+    text-indent: 5px;
+    height: 35px;
+    
+}
+textarea{
+    width: 80%;
+    outline: none;
+    text-indent: 5px;
+    resize: none;
+    font-size: 14pt;
+}
+button{
+    width: 20%;
+    
+}
