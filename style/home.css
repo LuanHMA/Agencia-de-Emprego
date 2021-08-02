@@ -298,6 +298,10 @@ div#form-home button svg{
     }
 }
 @media (max-width: 520px){
+    section#buscar-emprego #info-busca h2{
+        margin-top: 20px;
+    }
+
     .vaga .foto-vaga{
         position: relative;
         top: -15px;

@@ -25,9 +25,15 @@ button{
     width: 20%;
     
 }
+
 @media (max-width: 640px){
     #form-contato{
         width: 100%;
         margin-left: 20px;
     } 
+}
+@media (min-height: 620px){
+    footer{
+        position: fixed;
+    }
 }
