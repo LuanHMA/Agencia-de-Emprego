@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,900&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/anuncie.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <title>Selexpert</title>
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="logotipo">
+                <h1 class="logo"><a href="index.html">Selexpert</a></h1>
+            </div>
+            
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+
+            <nav>
+                <a href="index.html" >Início</a>
+                <a href="vagas.html" >Procurar Emprego</a>
+                <a href="anuncie.html" class="selecionado">Anuncie</a>
+                <a href="sobre-nos.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+        
+    </header>
+    <!--End Header-->
+    <main>
+        <div id="anuncio-header">
+            <div id="texto-anuncio">
+                <h1>Encontre sua próxima contratação de forma rápida e gratuita!</h1>
+                <h2>Você já sabe qual candidato quer encontrar.
+                E nós sabemos como ajudar você.</h2>
+
+            </div>
+
+            <div class="linha"></div>
+
+            <div id="form-anuncio">
+                <h1>Cadastrar Vaga</h1>
+                
+                <form action="#">
+                    <div class="nome">
+                        <input type="text" id="nome" placeholder="Nome da Empresa">
+
+                    </div>
+                    <div class="infoPessoais">
+                        <input type="email" placeholder="Email">
+                        <input type="tel" placeholder="Telefone">
+                    </div>
+
+                    <div class="localizacao">
+                  
+                        <select id="estados" name="estados">
+                            <option value="ac">Acre</option> 
+                            <option value="al">Alagoas</option> 
+                            <option value="am">Amazonas</option> 
+                            <option value="ap">Amapá</option> 
+                            <option value="ba">Bahia</option> 
+                            <option value="ce">Ceará</option> 
+                            <option value="df">Distrito Federal</option> 
+                            <option value="es">Espírito Santo</option> 
+                            <option value="go">Goiás</option> 
+                            <option value="ma">Maranhão</option> 
+                            <option value="mt">Mato Grosso</option> 
+                            <option value="ms">Mato Grosso do Sul</option> 
+                            <option value="mg">Minas Gerais</option> 
+                            <option value="pa">Pará</option> 
+                            <option value="pb">Paraíba</option> 
+                            <option value="pr">Paraná</option> 
+                            <option value="pe">Pernambuco</option> 
+                            <option value="pi">Piauí</option> 
+                            <option value="rj">Rio de Janeiro</option> 
+                            <option value="rn">Rio Grande do Norte</option> 
+                            <option value="ro">Rondônia</option> 
+                            <option value="rs">Rio Grande do Sul</option> 
+                            <option value="rr">Roraima</option> 
+                            <option value="sc">Santa Catarina</option> 
+                            <option value="se">Sergipe</option> 
+                            <option value="sp">São Paulo</option> 
+                            <option value="to">Tocantins</option> 
+                        </select>
+                        <input type="text" id="endereco" placeholder="Endereço">
+
+                    </div>
+
+                    <div class="cargo">
+                        <input type="text" id="cargo" placeholder="Cargo">
+                    </div>
+
+                    <div class="sobre-vaga">
+                        <select name="tipo" id="tipo" >
+                            <option value="tipo" class="option">Tipo da Vaga</option>
+                            <option value="emprego">Emprego</option>
+                            <option value="estagio">Estágio</option>
+                            <option value="estagioferias">Estágio de Férias</option>
+                            <option value="jovem">Jovem Aprendiz</option>
+                        </select>
+
+                        <select name="duracao" id="duracao">
+                            <option value="duracao">Duração do Anúncio</option>
+                            <option value="dia">1 Dia</option>
+                            <option value="sema" >1 Semana </option>
+                            <option value="mes" >2 Semanas </option>
+                            <option value="mes" >1 Mês </option>
+                        </select>
+                    </div>
+
+                    <div class="descricao">
+                        <textarea id="descricao"  placeholder="Descrição" ></textarea>
+                    </div>
+                    <div class="requisitos">
+                        <textarea id="requisitos"  placeholder="Requisitos"></textarea>
+                    </div>
+                    <div class="botao">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <footer style="position: static;">
+        <p>Site criado para fins estudantis</p>
+        <p>&copy;Selexpert | 2021</p>
+    </footer>
+
+    <script src="../script/script.js"></script>
+
+</body>
+</html>

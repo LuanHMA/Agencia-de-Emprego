@@ -1,0 +1,33 @@
+main{
+    margin: 20px auto;
+    padding-left: 15px;
+    width: 100%
+}
+#form-contato{
+    width: 70%;
+    margin: 20px auto;
+}
+input{
+    width: 80%;
+    outline: none;
+    text-indent: 5px;
+    height: 35px;
+    
+}
+textarea{
+    width: 80%;
+    outline: none;
+    text-indent: 5px;
+    resize: none;
+    font-size: 14pt;
+}
+button{
+    width: 20%;
+    
+}
+@media (max-width: 640px){
+    #form-contato{
+        width: 100%;
+        margin-left: 20px;
+    } 
+}
