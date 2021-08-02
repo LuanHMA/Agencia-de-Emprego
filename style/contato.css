@@ -36,4 +36,7 @@ button{
     footer{
         position: fixed;
     }
+    body{
+        overflow-x: hidden;
+    }
 }
